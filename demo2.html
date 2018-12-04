@@ -1,0 +1,73 @@
+<head>
+  <script src="./js/arrows.js"></script>
+  <!-- https://dequeuniversity.com/screenreaders/nvda-keyboard-shortcuts -->
+</head>
+
+<header id="header" class="header">
+    <a href="/" class="header__logo-link">
+        <img src="https://cloud.githubusercontent.com/assets/1392632/17407845/d22d7a44-5a36-11e6-81ea-4077bd62bc64.png" alt="My Site" class="header__logo-image">
+    </a>
+
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__list-item">
+                <a href="#" class="arrow-togglable">Home</a>
+            </li>
+            <li class="nav__list-item">
+                <a href="#" class="arrow-togglable">About</a>
+            </li>
+            <li class="nav__list-item">
+                <a href="#" class="arrow-togglable">Contact</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+
+    <h1>Contacto</h1>
+
+    <p>Hola, como va todo?</p>
+
+    <table style="width:100%">
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Jill</td>
+        <td>Smith</td>
+        <td>50</td>
+      </tr>
+      <tr>
+        <td>Eve</td>
+        <td>Jackson</td>
+        <td>94</td>
+      </tr>
+    </table>
+
+    <svg height="500" width="500" role="figure">
+      <!-- add title in a sibbling:
+      https://simplyaccessible.com/article/7-solutions-svgs/ -->
+      <line aria-label="figura 1, como contar." x1="0" y1="200" x2="500" y2="200" style="stroke:rgb(0,0,0);stroke-width:2" />
+      <line x1="10" y1="175" x2="10" y2="225" style="stroke:rgb(0,0,0);stroke-width:2" />
+      <text role="presentation" x="5" y="170" font-size ="25" > 0 </text>
+      <!-- aria-hidden -->
+      <text aria-hidden="true" x="5" y="245" font-size ="25" > 1000 </text>
+      <text x="35" y="190" font-size ="25" > + 4 </text>
+      <text x="95" y="170" font-size ="25" > 4 </text>
+      <!-- <text x="95" y="245" font-size ="25" > 1 </text> -->
+      <line id="tick1" x1="100" y1="175" x2="100" y2="225" style="stroke:rgb(0,0,0);stroke-width:2" />
+    </svg>
+
+    <form id="contactForm" action="#" method="post" class="form">
+        <label for="yourName" class="form__label">Your name:</label>
+        <input type="text" name="yourName" id="yourName" class="form__input">
+
+        <label for="yourMessage" class="form__label">Your message:</label>
+        <textarea name="yourMessage" id="yourMessage" class="form__textarea"></textarea>
+
+        <button class="form__button">Submit</button>
+    </form>
+</main>

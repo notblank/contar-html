@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <title>X Algo</title>
+</head>
+
+<body>
+  <header>
+    <h1>Contar</h1>
+  </header>
+  <nav class="nav">
+    <ul class="nav__list">
+      <li class="nav__list-item">
+        <a href="#" class="arrow-togglable">Home</a>
+      </li>
+      <li class="nav__list-item">
+        <a href="#" class="arrow-togglable">Pasos de + algo</a>
+      </li>
+      <li class="nav__list-item">
+        <a href="#" class="arrow-togglable">Pasos de x algo</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="pasosPorAlgo">
+      <h1>Pasos Por Algo</h1>
+      <article id="potencias">
+        <h2>Potencias</h2>
+
+        <p>En vez de dar pasos de mas algo como antes, en esta sección vamos a dar pasos de por algo.</p>
+
+        <p>Por ejemplo, ¿Qué tal si damos 3 pasos de por 2? Vamos a escribir <b aria-label="dos con un tres arriba"><em aria-hidden="true">\(2^3\)</em></b>, que se lee 2 a la 3, para denotar 3 pasos de por 2. Un diagrama de 3 pasos de por 2 se ve
+          así:</p>
+
+        <p>Gráfico 1.</p>
+
+        <svg height="300" width="600" role="figure" viewbox="-50 -50 600 300">
+
+          <line x1="0" y1="100" x2="380" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <text x="4" y="150" font-size="25"> 0 </text>
+          <text x="94" y="150" font-size="25">1 </text>
+          <text x="194" y="150" font-size="25">2</text>
+          <text x="294" y="150" font-size="25">3 </text>
+
+          <text x="40" y="90" aria-hidden="true" font-size="25"> x2 </text>
+          <line aria-label="por 2" class="tick" x1="10" y1="130" x2="10" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <text x="140" y="90" aria-hidden="true" font-size="25"> x2 </text>
+          <line aria-label="por 2" class="tick" x1="100" y1="130" x2="100" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <text x="240" y="90" aria-hidden="true" font-size="25"> x2 </text>
+          <line aria-label="por 2" class="tick" x1="200" y1="130" x2="200" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <line class="tick" x1="300" y1="130" x2="300" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <line x1="350" y1="120" x2="380" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <line x1="350" y1="80" x2="380" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
+        </svg>
+
+        <p>En el diagrama solo dibujamos los pasos y su tamaño, ahora tenemos que decidir a donde nos llevan esos pasos.</p>
+
+        <p>¿Qué les parece si primero decidimos dónde comenzamos a dar los pasos? Si comenzamos en 0 y damos pasos de por 2, me quedo en 0.</p>
+
+        <p class="ejercicio">
+          <b>EJERCICIO: ¿Pueden decirme por qué?</b>
+        </p>
+
+        <p>Para las potencias tiene sentido comenzar en 1. Así, luego de un paso de por 2 estoy en 2. Con esta convención el diagrama de <b aria-label="2 a la 3"><em aria-hidden="true">\(2^3\)</em></b> se ve así:</p>
+
+        <p>Gráfico 2.</p>
+
+        <svg height="300" width="600" role="figure" viewbox="-50 -50 600 300">
+
+          <line x1="0" y1="100" x2="380" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <text x="4" y="67"  font-size ="25"> 1 </text>
+          <text x="40" y="90" aria-hidden="true" font-size="25"> x2 </text>
+          <line aria-label="por 2" class="tick" x1="10" y1="130" x2="10" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <text x="94" y="67"  font-size ="25"> 2 </text>
+          <text x="140" y="90" aria-hidden="true" font-size="25"> x2 </text>
+          <line aria-label="por 2" class="tick" x1="100" y1="130" x2="100" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <text x="194" y="67"  font-size ="25"> 4</text>
+          <text x="240" y="90" aria-hidden="true" font-size="25"> x2 </text>
+          <line aria-label="por 2" class="tick" x1="200" y1="130" x2="200" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <text x="294" y="67"  font-size ="25"> 8 </text>
+
+          <text x="4" y="150" aria-hidden="true" font-size="25"> 0 </text>
+          <text x="94" y="150" aria-hidden="true"s font-size="25">1 </text>
+          <text x="194" y="150" aria-hidden="true" font-size="25">2</text>
+          <text x="294" y="150" aria-hidden="true" font-size="25">3 </text>
+
+          <line class="tick" x1="300" y1="130" x2="300" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <line x1="350" y1="120" x2="380" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <line x1="350" y1="80" x2="380" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
+        </svg>
+
+        <p>Entonces, <b aria-label="2 a la 3 igual 8"><em aria-hidden="true">\(2^3= 8\)</em></b>.</p>
+
+        <p>Probemos otra potencia. Ahora demos 4 pasos de por 10, que se escribe <b aria-label="10 a la 4"><em aria-hidden="true">\(10^4\)</em></b>. ¿Ese es un número grande?</p>
+
+        <p>Comencemos a dibujar el diagrama:</p>
+
+        <p>Gráfico 3.</p>
+
+        <svg height="300" width="600" role="figure" viewbox="-50 -50 600 300">
+
+          <line x1="0" y1="100" x2="450" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <text x="4" y="150" font-size="25"> 0 </text>
+          <text x="94" y="150" font-size="25"> 1 </text>
+          <text x="194" y="150" font-size="25"> 2 </text>
+          <text x="294" y="150" font-size="25"> 3 </text>
+          <text x="394" y="150" font-size="25"> 4 </text>
+
+          <text x="40" y="90" aria-hidden="true" font-size="25"> x10 </text>
+          <line aria-label="por 10" class="tick" x1="10" y1="130" x2="10" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <text x="140" y="90" aria-hidden="true" font-size="25"> x10 </text>
+          <line aria-label="por 10" class="tick" x1="100" y1="130" x2="100" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <text x="240" y="90" aria-hidden="true" font-size="25"> x10 </text>
+          <line aria-label="por 10" class="tick" x1="200" y1="130" x2="200" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <text x="340" y="90" aria-hidden="true" font-size="25"> x10 </text>
+          <line aria-label="por 10" class="tick" x1="300" y1="130" x2="300" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <line class="tick" x1="400" y1="130" x2="400" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <line class="tick" x1="300" y1="130" x2="300" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <line x1="420" y1="120" x2="450" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <line x1="420" y1="80" x2="450" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
+        </svg>
+
+        <p>Ok, ahora solo tengo que dar 4 pasos de por 10. La recta completa se ve así:</p>
+
+        <p>Gráfico 4.</p>
+
+        <svg height="300" width="600" role="figure" viewbox="-50 -50 600 300">
+
+          <line x1="0" y1="100" x2="450" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <text x="4" y="150" aria-hidden="true" font-size="25"> 0 </text>
+          <text x="94" y="150" aria-hidden="true" font-size="25"> 1 </text>
+          <text x="194" y="150" aria-hidden="true" font-size="25"> 2 </text>
+          <text x="294" y="150" aria-hidden="true" font-size="25"> 3 </text>
+          <text x="394" y="150" aria-hidden="true" font-size="25"> 4 </text>
+
+          <text x="4" y="67"  font-size ="25"> 1 </text>
+          <text x="40" y="90" aria-hidden="true" font-size="25"> x10 </text>
+          <line aria-label="por 10" class="tick" x1="10" y1="130" x2="10" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <text x="94" y="67"  font-size ="25"> 10 </text>
+          <text x="140" y="90" aria-hidden="true" font-size="25"> x10 </text>
+          <line aria-label="por 10" class="tick" x1="100" y1="130" x2="100" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <text x="194" y="67"  font-size ="25"> 100 </text>
+          <text x="240" y="90" aria-hidden="true" font-size="25"> x10 </text>
+          <line aria-label="por 10" class="tick" x1="200" y1="130" x2="200" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <text x="294" y="67"  font-size ="25"> 1000 </text>
+          <text x="340" y="90" aria-hidden="true" font-size="25"> x10 </text>
+          <line aria-label="por 10" class="tick" x1="300" y1="130" x2="300" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <text x="394" y="67"  font-size ="25"> 10000 </text>
+          <line class="tick" x1="400" y1="130" x2="400" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <line class="tick" x1="300" y1="130" x2="300" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <line x1="420" y1="120" x2="450" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <line x1="420" y1="80" x2="450" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
+        </svg>
+
+        <p>¡Cool! <b aria-label="10 a la 4 igual 10000"><em aria-hidden="true">\(10^4 = 10000\)</em></b>. La respuesta es uno seguido de 4 ceros.</p>
+
+        <p>¿Cómo escribo <b aria-label="10 a la 12"><em aria-hidden="true">\(10^{12}\)</em></b>? Puedo escribir 1 y luego 12 ceros. Eso suena un poco complicado. Para número muy grandes es mejor usar la notación de potencias y escribir <b aria-label="10 a la 12"><em
+              aria-hidden="true">\(10^{12}\)</em></b> sin olvidarse de lo que significa. </p>
+
+        <p class="ejercicio"><b>EJERCICIO: Discutan las dos notaciones, ¿cuál les parece mejor?</b></p>
+
+        <p>Para recapitular, para las potencias escribimos <b aria-label="tamaño del paso al número de pasos"><em aria-hidden="true">\((tamaño \ del \ paso)^{(número \ de \ pasos)}\)</em></b>. Cuando trabajen con números muy grandes es mejor usar esa notación que escribir todo.</p>
+
+        <p>Ya sabemos como interpretar potencias. Tratemos de hacer lo mismo que hicimos con los pasos de mas algo y usemos números negativos y fracciones para el el tamaño y el número de pasos.</p>
+
+        <p>Comencemos con el número de pasos. ¿Qué es <b aria-label="2 a la -1"><em aria-hidden="true">\(2^{-1}\)</em></b>? ¡No se! Pensemos un rato. Por el momento puedo decir 2 cosas: voy a dar pasos de por 2 y ... voy a dar -1 pasos. Lo de pasos
+          de por 2 es fácil pero ¿qué significa dar -1 pasos? Acuérdense que cuando contábamos en mas unos, el paso -1 era un paso antes del primero. En un diagrama el paso -1 se ve así: </p>
+
+        <p>Gráfico 5.</p>
+
+        <svg height="300" width="600" role="figure" viewbox="-50 -50 600 300">
+
+          <line x1="0" y1="100" x2="380" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <text x="94" y="150" aria-hidden="true" qfont-size="25"> -1 </text>
+          <text x="194" y="150" aria-hidden="true" font-size="25"> 0 </text>
+          <text x="294" y="150" aria-hidden="true" font-size="25"> 1 </text>
+
+          <text x="94" y="67"  font-size ="25"> Algo </text>
+          <text x="140" y="90" aria-hidden="true" font-size="25"> x2 </text>
+          <line aria-label="por 2" class="tick" x1="100" y1="130" x2="100" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <text x="194" y="67"  font-size ="25"> 1 </text>
+          <text x="240" y="90" aria-hidden="true" font-size="25"> x2 </text>
+          <line aria-label="por 2" class="tick" x1="200" y1="130" x2="200" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <text x="294" y="67"  font-size ="25"> 2 </text>
+          <line class="tick" x1="300" y1="130" x2="300" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <line x1="350" y1="120" x2="380" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <line x1="350" y1="80" x2="380" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
+        </svg>
+
+        <p>Ahora, si en el primer paso estoy en 1, hace un paso - o en el paso -1 - estaba en un número que multiplicado por 2 es 1. Entonces, <b aria-label="2 a la -1"><em aria-hidden="true">\(2^{-1}\)</em></b> = <b aria-label="un medio"><em
+              aria-hidden="true">\(\frac{1}{2}\)</em></b>.</p>
+
+      </article>
+    </section>
+  </main>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<div id="header" class="header">
+    <a href="/" class="header__logo-link">
+        <img src="https://cloud.githubusercontent.com/assets/1392632/17407845/d22d7a44-5a36-11e6-81ea-4077bd62bc64.png" class="header__logo-image">
+    </a>
+
+    <div class="nav">
+        <a onclick="window.location='home.html';" class="nav__link">Home</a>
+        <a onclick="window.location='about.html';" class="nav__link">About</a>
+        <a onclick="window.location='contact.html';" class="nav__link">Contact</a>
+    </div>
+</div>
+<div id="main" class="main">
+    <div class="title">Contact</div>
+
+    <form id="contactForm" action="#" method="post" class="form">
+        <p class="form__label">Your name:</p>
+        <input type="text" name="yourName"  class="form__input">
+
+        <p class="form__label">Your message:</p>
+        <textarea name="yourMessage" class="form__textarea"></textarea>
+
+        <span class="form__button" onclick="contactForm.submit();">Submit</span>
+    </form>
+</div>
