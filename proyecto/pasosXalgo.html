@@ -2,8 +2,12 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <script src="./js/stickyNavBar.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+  <link rel="stylesheet" href="./css/main.css">
+
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+
   <title>X Algo</title>
 </head>
 
@@ -11,7 +15,8 @@
   <header>
     <h1>Contar</h1>
   </header>
-  <nav class="nav">
+
+  <nav id="navbar">
     <ul class="nav__list">
       <li class="nav__list-item">
         <a href="#" class="arrow-togglable">Home</a>
@@ -26,7 +31,7 @@
   </nav>
 
   <main>
-    <section id="pasosPorAlgo">
+    <section id="pasosPorAlgo" class="content">
       <h1>Pasos Por Algo</h1>
       <article id="potencias">
         <h2>Potencias</h2>
