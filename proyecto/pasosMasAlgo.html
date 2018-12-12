@@ -33,14 +33,14 @@
   </nav>
 
   <main>
-    <section id="pasosMasAlgo">
+    <section id="pasosMasAlgo" class="content">
       <h1>Pasos Mas Algo</h1>
 
       <article id="sumar">
         <h2>Sumar</h2>
         <p><b aria-label="Pregunta: ¿Qué es contar?"><b aria-hidden="true">¿Qué es contar?</b></b> Contar es dar pasos de +1.</p>
-        <p>Gráfico 1.</p>
 
+        <p>Gráfico 1.</p>
         <svg ehight="300" width="600" role="figure" viewbox="-50 -50 600 300">
 
           <line x1="0" y1="100" x2="450" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
@@ -109,10 +109,9 @@
         <p> Si podemos, entonces el número en el que comenzamos es tal que si damos un paso de +1 llegamos a 0. Ese número es -1.</p>
 
         <p>Gráfico 3</p>
-        <svg height="300" width="600" role="figure" viewbox="-50 -50 600 300">
 
+        <svg height="300" width="600" role="figure" viewbox="-50 -50 600 300">
           <line x1="0" y1="100" x2="450" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
-s
           <line class="tick" x1="100" y1="130" x2="100" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
           <text x="94" y="150" font-size="25"> -1 </text>
           <line aria-label="mas uno" class="tick" x1="150" y1="0" x2="150" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" />
@@ -335,31 +334,26 @@ s
           <line x1="420" y1="120" x2="450" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
           <line x1="420" y1="80" x2="450" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
         </svg>
-<!--  seguir aquí -->
-<!--  -->
-<!--  -->
-<!--  -->
-        <p>Ok. <strong>¿Pueden explicar qué significa -2?</strong></p>
+
+        <p><strong>¿Pueden explicar qué significa -2?</strong></p>
       </article>
 
       <article id="multiplicar">
         <h2>Multiplicar</h2>
-        <p>Al contar solo doy pasos de +1, también
-          puedo preguntarme en donde estaba</p>
-        <p>hace 3 pasos y ese tipo de cosas, solo tengo que acordarme de comenzar</p>
-        <p>en 0, pero ¿qué tal si en lugar de ello doy pasos de +2 o más?</p>
+        <p>Al contar siempre doy pasos de +1. Dando pasos de +1, ordenamos todos los números mas grandes que cero: 1, 2, 3, etc y todos los números mas pequeños que 0: -1, -2, -3, etc. Si un número es mas grande que 0, le vamos a llamar positivo y si es mas pequeño, negativo.</p>
 
-        <p>Gráfico 9</p>
+        <p>Para multiplicar voy a dar pasos de + algún número mas grande que 1 o dicho de otra forma positivo. Por ejemplo, puedo dar pasos de +2. </p>
 
+        <p>Gráfico 10</p>
         <svg height="300" width="600" role="figure" viewbox="-50 -50 600 300">
 
           <line x1="0" y1="100" x2="450" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
 
-          <text x="4" y="150" font-size="25"> 0 </text>
-          <text x="94" y="150" font-size="25"> 1 </text>
-          <text x="194" y="150" font-size="25"> 2 </text>
-          <text x="294" y="150" font-size="25"> 3 </text>
-          <text x="394" y="150" font-size="25"> 4 </text>
+          <text x="4" y="150" aria-hidden="true" font-size="25"> 0 </text>
+          <text x="94" y="150" aria-hidden="true" font-size="25"> 1 </text>
+          <text x="194" y="150" aria-hidden="true" font-size="25"> 2 </text>
+          <text x="294" y="150" aria-hidden="true" font-size="25"> 3 </text>
+          <text x="394" y="150" aria-hidden="true" font-size="25"> 4 </text>
 
           <line class="tick" x1="10" y1="130" x2="10" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
           <text x="4" y="67" font-size="25"> 0 </text>
@@ -389,16 +383,54 @@ s
           <line x1="420" y1="80" x2="450" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
         </svg>
 
-        <p>Luego de dos pasos ¡estoy en 4!, Con la anterior forma de contar todavía estuviera en 2.</p>
-        <p>Para utilizar las dos formas voy a poner la forma de contar con +1 abajo y la nueva arriba</p>
+        <p>Luego de dos pasos de +2 ¡estoy en 4!. Si estuviera contando estaría en 2. Dos pasos de +2 se nota <b aria-label="dos por dos"><b aria-hidden="true">2x2</b></b>.</p>
 
-        <p>3x2 son tres pasos de +2 o si quieren 2+2+2=6</p>
+        <p>Es útil anotar el número de los pasos que doy. Voy aanotar ese número debajo de las marcas del diagrama y voy a escribir el lugar al que llego multiplicando sobre las marcas. El típico gráfico se ve así:</p>
 
-        <p>¿Qué es 2x3?</p>
+        <p>Gráfico 11</p>
+        <svg height="300" width="600" role="figure" viewbox="-50 -50 600 300">
 
-        <p>Son dos pasos de +3</p>
+          <line aria-label="abajo" x1="0" y1="100" x2="450" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
 
-        <p>Gráfico 10</p>
+          <text x="4" y="150" font-size="25"> 0 </text>
+          <text x="94" y="150" font-size="25"> 1 </text>
+          <text x="194" y="150" font-size="25"> 2 </text>
+          <text x="294" y="150" font-size="25"> 3 </text>
+          <text x="394" y="150" font-size="25"> 4 </text>
+
+          <line aria-label="arriba" class="tick" x1="10" y1="130" x2="10" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
+          <text x="4" y="67" font-size="25"> 0 </text>
+          <line aria-label="mas dos" class="tick" x1="50" y1="0" x2="50" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" />
+          <text x="40" y="90" aria-hidden="true" font-size="25"> +2 </text>
+
+          <line class="tick" x1="100" y1="130" x2="100" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
+          <text x="94" y="67" font-size="25"> 2 </text>
+          <line aria-label="mas dos" class="tick" x1="150" y1="0" x2="150" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" />
+          <text x="140" y="90" aria-hidden="true" font-size="25"> +2 </text>
+
+          <line class="tick" x1="200" y1="130" x2="200" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
+          <text x="194" y="67" font-size="25"> 4 </text>
+          <line aria-label="mas dos" class="tick" x1="250" y1="0" x2="250" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" />
+          <text x="240" y="90" aria-hidden="true" font-size="25"> +2 </text>
+
+          <line class="tick" x1="300" y1="130" x2="300" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
+          <text x="294" y="67" font-size="25"> 6 </text>
+          <line aria-label="mas dos" class="tick" x1="350" y1="0" x2="350" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" />
+          <text x="340" y="90" aria-hidden="true" font-size="25"> +2 </text>
+
+          <text x="394" y="67" font-size="25"> 8</text>
+          <line class="tick" x1="400" y1="130" x2="400" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
+
+          <!--flecha final de la recta-->
+          <line x1="420" y1="120" x2="450" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
+          <line x1="420" y1="80" x2="450" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
+        </svg>
+
+        <p>En el diagrama anterior podemos ver que <b aria-label="3 por 2"><b aria-hidden="true">3x2</b></b>, o tres pasos de mas 2, es igual a 6.</p>
+
+        <p><b aria-label="Pregunta: ¿Qué es 2 por 3?"><b aria-hidden="true">¿Qué es 2x3?</b></b> Son dos pasos de +3.</p>
+
+        <p>Gráfico 12</p>
 
         <svg height="300" width="600" role="figure" viewbox="-50 -50 600 300">
 
@@ -425,29 +457,26 @@ s
           <line x1="350" y1="80" x2="380" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
         </svg>
 
-        <p>Es lo mismo que 3x2, seis</p>
+        <p>Entonces, <b aria-label="2 por 3"><b aria-hidden="true">2x3</b></b> es lo mismo que <b aria-label="3 por 2"><b aria-hidden="true">3x2</b></b>, seis. Es lo mismo dar 2 pasos de +3 que 3 pasos de +2 porque 2 + 2 + 2 y 3 + 3 son dos formas de descomponer 6.</p>
 
-        <p>No parece tan complicado</p>
+        <p>En general, <b aria-label="n por m"><b aria-hidden="true">n x m</b></b> es igual a <b aria-label="m por n"><b aria-hidden="true">m x n</b></b>.</p>
 
-        <p>Además sin darnos cuenta podemos dar pasos tan grandes como queramos +2,
-          +3, +4, +5,… </p>
-
-        <p>Por ejemplo 3x4 son tres pasos de +4 que es 12</p>
+        <p>Podemos dar pasos tan grandes como queramos. Por ejemplo, pasos de +4 como en <b aria-label="3 por 4"><b aria-hidden="true">3x4</b></b> que son tres pasos de +4.</p>
 
         <p class="ejercicio">
-          <strong>EJERCICIO: Hagan el dibujo para 3x4.</strong>
+          <strong>EJERCICIO: Hagan el dibujo para <b aria-label="3 por 4"><b aria-hidden="true">3x4</b></b> y calculen el resultado.</strong>
         </p>
 
       </article>
 
       <article id="dividir">
         <h2>Dividir</h2>
-        <p>El número 8/2 se lee ocho sobre dos</p>
-        <p>Ocho es el lugar al que quiero llegar dando pasos de +2</p>
-        <p>Ocho sobre dos es el número de pasos de +2 que tengo que dar para llegar a 8.</p>
-        <p>Al comienzo el diagrama se ve así</p>
 
-        <p>Gráfico 11</p>
+        <p>El número <b aria-label="8 barra 2"><b aria-hidden="true">8/2</b></b>, que se lee ocho sobre dos, es el número de pasos de +2 que tengo que dar para llegar a 8 comenzando en 0.</p>
+
+        <p>Ocho es el lugar al que quiero llegar, voy a dar pasos de +2 y comienzo en 0. Primero escribamos algunos pasos de mas 2 en un diagrama:</p>
+
+        <p>Gráfico 13</p>
 
         <svg height="300" width="600" role="figure" viewbox="-50 -50 600 300">
 
@@ -459,8 +488,8 @@ s
           <text x="294" y="150" font-size="25"> 3 </text>
           <text x="394" y="150" font-size="25"> 4 </text>
 
-          <line class="tick" x1="10" y1="130" x2="10" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
-          <text x="4" y="67" font-size="25"> 0 </text>
+          <line aria-label="comienzo en 0 y hago" class="tick" x1="10" y1="130" x2="10" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
+          <text aria-hidden="true" x="4" y="67" font-size="25"> 0 </text>
           <line aria-label="mas dos" class="tick" x1="50" y1="0" x2="50" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" />
           <text x="40" y="90" aria-hidden="true" font-size="25"> +2 </text>
 
@@ -487,41 +516,39 @@ s
           <line x1="420" y1="80" x2="450" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
         </svg>
 
-        <p>Solo se en donde comienzo -0- y el tamaño de los pasos que voy a dar (+2)</p>
+        <p>Por el momento solo se que comienzo en 0 y que el tamaño de los pasos que voy a dar es <b aria-label="mas dos"><b aria-hidden="true">+2</b></b>. Demos algunos pasos:</p>
 
-        <p>Vamos a dar algunos pasos:</p>
-
-        <p>Gráfico 12</p>
+        <p>Gráfico 14</p>
 
         <svg height="300" width="600" role="figure" viewbox="-50 -50 600 300">
 
           <line x1="0" y1="100" x2="450" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
 
-          <text x="4" y="150" font-size="25"> 0 </text>
-          <text x="94" y="150" font-size="25"> 1 </text>
-          <text x="194" y="150" font-size="25"> 2 </text>
-          <text x="294" y="150" font-size="25"> 3 </text>
-          <text x="394" y="150" font-size="25"> 4 </text>
+          <text x="4" y="150" aria-hidden="true" font-size="25"> 0 </text>
+          <text x="94" y="150" aria-hidden="true" font-size="25"> 1 </text>
+          <text x="194" y="150" aria-hidden="true" font-size="25"> 2 </text>
+          <text x="294" y="150" aria-hidden="true" font-size="25"> 3 </text>
+          <text x="394" y="150" aria-hidden="true" font-size="25"> 4 </text>
 
           <line class="tick" x1="10" y1="130" x2="10" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
           <text x="4" y="67" font-size="25"> 0 </text>
           <line aria-label="mas dos" class="tick" x1="50" y1="0" x2="50" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" />
-          <text x="40" y="90" aria-hidden="true" font-size="25"> +2 </text>
+          <text aria-hidden="true" x="40" y="90" font-size="25"> +2 </text>
 
           <line class="tick" x1="100" y1="130" x2="100" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
           <text x="94" y="67" font-size="25"> 2 </text>
           <line aria-label="mas dos" class="tick" x1="150" y1="0" x2="150" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" />
-          <text x="140" y="90" aria-hidden="true" font-size="25"> +2 </text>
+          <text aria-hidden="true" x="140" y="90" font-size="25"> +2 </text>
 
           <line class="tick" x1="200" y1="130" x2="200" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
           <text x="194" y="67" font-size="25"> 4 </text>
           <line aria-label="mas dos" class="tick" x1="250" y1="0" x2="250" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" />
-          <text x="240" y="90" aria-hidden="true" font-size="25"> +2 </text>
+          <text aria-hidden="true" x="240" y="90" font-size="25"> +2 </text>
 
           <line class="tick" x1="300" y1="130" x2="300" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
           <text x="294" y="67" font-size="25"> 6 </text>
           <line aria-label="mas dos" class="tick" x1="350" y1="0" x2="350" y2="0" style="stroke:rgb(0,0,0);stroke-width:2" />
-          <text x="340" y="90" aria-hidden="true" font-size="25"> +2 </text>
+          <text aria-hidden="true" x="340" y="90" font-size="25"> +2 </text>
 
           <text x="394" y="67" font-size="25"> 8 </text>
           <line class="tick" x1="400" y1="130" x2="400" y2="70" style="stroke:rgb(0,0,0);stroke-width:2" />
@@ -531,11 +558,15 @@ s
           <line x1="420" y1="80" x2="450" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
         </svg>
 
+        <p>En el diagrama podemos ver que con 4 pasos de <b aria-label="mas dos"><b aria-hidden="true">+2</b></b> ¡llegué a 8! Entonces, puedo escribir <b aria-label="8 sobre 2 igual 4"><b aria-hidden="true">8/2 = 4</b></b>.</p>
 
-        <p>Con 4 pasos de +2 ¡llegué a 8! Puedo escribir 8/2=4</p>
-        <p>¿Qué es 1/2?</p>
-        <p>Ok quiero llegar a 1 dando pasos de +2. Solo tengo que dar ¡medio paso!</p>
-        <p>¿1/2=1/2?</p>
+        <p><b aria-label="Pregunta: ¿Qué es 1 sobre dos?"><b aria-hidden="true">¿Qué es 1/2?</b></b> Veamos, quiero llegar a 1 dando pasos de <b aria-label="mas dos"><b aria-hidden="true">+2</b></b>. Si comienzo en 0 y doy un paso de <b aria-label="mas dos"><b aria-hidden="true">+2</b></b>, llego a 2, ¡me pasé!</p>
+
+        <!-- Necesito explicar que es una fracción: Voy a usar contar.  -->
+        <!--  -->
+        <!--  -->
+
+        <p>Solo tengo que dar ¡medio paso! ¿1/2=1/2?</p>
         <p>En este caso es mejor hacer un dibujo</p>
 
         <p>Gráfico 13</p>
