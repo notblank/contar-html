@@ -6,3 +6,4 @@ El folder proyecto contiene algunos prototipos que funcionan con NVDA.
 
 Transcript contienen transcripciones de una parte del esquleto del curso. 
 
+[Pasos de mas algo](https://github.com/notblank/contar-html/blob/master/proyecto/pasosMasAlgo.html)
