@@ -27,3 +27,25 @@
   top: 0;
   width: 100%;
 }
+
+/* footer */
+#footer {
+  overflow: hidden;
+  background-color: #242729;
+}
+
+/* footer li */
+#footer li {
+  float: left;
+  display: block;
+  text-align: left;
+  padding: 14px;
+  font-family: Arial, sans-serif;
+  font-size: 80%;
+  color: white;
+  border-right: solid white 1px;
+}
+
+#footer li:last-child {
+    border: 0px;
+}
