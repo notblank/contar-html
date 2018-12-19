@@ -18,7 +18,8 @@
 
 /* Page content */
 .content {
-  padding: 20px;
+  /*  top right bot left*/
+  padding: 20px 50px 20px 50px;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
